@@ -3,10 +3,29 @@
 }
 
 body {
-  background-color: black;
+  position: relative;
 }
 
-/*————— Header Bar —————*/
+/*div {
+  border: red solid 1px;
+}*/
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 66px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/*——————— HEADER BAR ———————*/
 /*Nav Bar*/
 nav {
   width: 100%;
@@ -17,7 +36,8 @@ nav {
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
+  border-bottom: 1px solid #0B5059;
 }
 
 .desktop {
@@ -45,7 +65,7 @@ ul {
 .links a {
   text-decoration: none;
   color: white;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   padding: 22px 10px;
 }
 
@@ -56,7 +76,7 @@ ul {
 
 .links a:active {
   background-color: #1F66BB;
-  transition: all .25s ease-in-out;
+  transition: all .03s ease-in-out;
 }
 
 /*Sign Up Butto*/
@@ -72,6 +92,7 @@ nav .desktop .links a:nth-child(4n+0):hover {
 
 nav .desktop .links a:nth-child(4n+0):active {
   background-color: #1F66BB;
+  transition: all .03s ease-in-out;
 }
 
 /*Mobile Toggle*/
@@ -79,7 +100,7 @@ nav .desktop .links a:nth-child(4n+0):active {
   display: none;
 }
 
-/*Responsive*/
+/*///////Responsive///////*/
 @media screen and (max-width: 680px) {
   .desktop .links a {
     display: none;
@@ -104,6 +125,7 @@ nav .desktop .links a:nth-child(4n+0):active {
 
   nav .desktop .links a:active {
     background-color: #1F66BB;
+    transition: all .03s ease-in-out;
   }
 
   .links.responsive {position: relative;}
@@ -118,4 +140,124 @@ nav .desktop .links a:nth-child(4n+0):active {
      display: block;
      text-align: left;
  }
+}
+
+@media screen and (max-width: 426px) {
+  .desktop img{
+    width: 150px;
+    height: auto;
+  }
+
+  nav {
+    width: 100%;
+    height:50px;
+  }
+
+  .desktop .links a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
+
+}
+
+
+
+
+/*——————— Hero Banner ———————*/
+.hero {
+  position: relative;
+  top: 63px;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.study-img {
+  width: 100%;
+  height: auto;
+  background-image: url('/Users/gedalyakrycer/Projects/Capstone/capstone_colmar/resources/images/banner-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+
+.hero-learn {
+  height: 500px;
+  width: 405px;
+  background: linear-gradient(179.49deg, #009999 0%, #1F66BB 100%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.learn-content {
+  padding: 30px 23px;
+  box-sizing: border-box;
+}
+
+.learn-content p {
+  	font-family: Lato, sans-serif;
+    line-height: 26px;
+    color: white;
+    margin-top: 30px;
+}
+
+#hero-button {
+  height: 45px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #FFB300;
+  color: white;
+  font-family: roboto, sans-serif;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 14px;
+  transition: all .25s ease-in-out;
+}
+
+#hero-button:hover {
+  background-color: #009999;
+}
+
+#hero-button:active {
+  background-color: white;
+  color: #009999;
+  transition: all .03s ease-in-out;
+}
+
+/*///////Responsive///////*/
+@media screen and (max-width: 426px) {
+  .hero {
+    position: relative;
+    top: 63px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .study-img {
+    width: 100%;
+    height: auto;
+    background-image: url('/Users/gedalyakrycer/Projects/Capstone/capstone_colmar/resources/images/hero-image-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 1;
+  }
+
+  .hero-learn {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(179.49deg, #009999 0%, #1F66BB 100%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+  }
 }
