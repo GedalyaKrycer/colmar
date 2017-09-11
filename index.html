@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colmar Academy</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,500,700,900" rel="stylesheet">
+
+    <!-- Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="desktop">
+        <a href="#"><img src="resources/images/White-Logo.png" alt="logo icon"></a>
+        <ul class="links" id="myTopnav">
+          <a href="#"><li>On Campus</li></a>
+          <a href="#"><li></li>Online</a>
+          <a href="#"><li></li>For Companies</a>
+          <a href="#"><li></li>Sign In</a>
+          <a href="javascript:void(0);" class="toggle" onclick="myFunction()"><i class="fa fa-align-right" aria-hidden="true"></i></a>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "links") {
+        x.className += " responsive";
+    } else {
+        x.className = "links";
+    }
+}
+</script>
+
+  </body>
+</html>
