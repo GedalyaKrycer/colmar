@@ -61,36 +61,41 @@ ul {
   padding:0;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 /*Links*/
-.links a {
+.links li a {
   text-decoration: none;
   color: white;
   font-family: Roboto, sans-serif;
   padding: 22px 10px;
 }
 
-.links a:hover {
+.links li a:hover {
   background-color: #FFB300;
   transition: all .25s ease-in-out;
 }
 
-.links a:active {
+.links li a:active {
   background-color: #1F66BB;
   transition: all .03s ease-in-out;
 }
 
 /*Sign Up Butto*/
-nav .desktop .links a:nth-child(4n+0) {
+nav .desktop .links li:nth-child(4n+0) {
   background-color: #009999;
-  padding: 22px 20px;
+  padding: 23px 20px;
   margin-right: 0;
 }
 
-nav .desktop .links a:nth-child(4n+0):hover {
+nav .desktop .links li:nth-child(4n+0):hover {
   background-color: #FFB300;
 }
 
-nav .desktop .links a:nth-child(4n+0):active {
+nav .desktop .links li:nth-child(4n+0):active {
   background-color: #1F66BB;
   transition: all .03s ease-in-out;
 }
@@ -102,16 +107,16 @@ nav .desktop .links a:nth-child(4n+0):active {
 
 /*///////Responsive///////*/
 @media screen and (max-width: 680px) {
-  .desktop .links a {
+  .desktop .links li {
     display: none;
   }
 
-  .desktop a.toggle {
+  .desktop li.toggle {
     float: right;
     display: block;
   }
 
-  .desktop .links a {
+  .desktop .links li a {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 24px;
@@ -119,23 +124,27 @@ nav .desktop .links a:nth-child(4n+0):active {
     background-color: #009999;
   }
 
-  nav .desktop .links a:hover {
+  nav .desktop .links li a:hover {
     background-color: #FFB300;
   }
 
-  nav .desktop .links a:active {
+  nav .desktop .links li a:active {
     background-color: #1F66BB;
     transition: all .03s ease-in-out;
   }
 
-  .links.responsive {position: relative;}
-    .links.responsive a.icon {
+  .links.responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+    .links.responsive li a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
 
-  .links.responsive a {
+  .links.responsive li a {
     float: none;
      display: block;
      text-align: left;
@@ -153,7 +162,7 @@ nav .desktop .links a:nth-child(4n+0):active {
     height:50px;
   }
 
-  .desktop .links a {
+  .desktop .links li a {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 18px;
@@ -234,7 +243,7 @@ nav .desktop .links a:nth-child(4n+0):active {
 /*///////Responsive///////*/
 @media screen and (max-width: 426px) {
   .hero {
-    position: relative;
+    /*position: relative;*/
     top: 63px;
     display: flex;
     flex-direction: column;
@@ -244,8 +253,8 @@ nav .desktop .links a:nth-child(4n+0):active {
 
   .study-img {
     width: 100%;
-    height: auto;
-    background-image: url('/Users/gedalyakrycer/Projects/Capstone/capstone_colmar/resources/images/hero-image-mobile.jpg');
+    height: 150px;
+    background-image: url('/Users/gedalyakrycer/Projects/Capstone/capstone_colmar/resources/images/hero-image-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
     order: 1;
@@ -259,5 +268,6 @@ nav .desktop .links a:nth-child(4n+0):active {
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
+    order: 2;
   }
 }
