@@ -187,7 +187,7 @@ nav .desktop .links li:nth-child(4n+0):active {
 .study-img {
   width: 100%;
   height: auto;
-  background-image: url('/Users/gedalyakrycer/Projects/Capstone/capstone_colmar/resources/images/banner-2.jpg');
+  background-image: url('/resources/images/banner-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
@@ -254,7 +254,7 @@ nav .desktop .links li:nth-child(4n+0):active {
   .study-img {
     width: 100%;
     height: 150px;
-    background-image: url('/Users/gedalyakrycer/Projects/Capstone/capstone_colmar/resources/images/hero-image-mobile.png');
+    background-image: url('/resources/images/hero-image-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
     order: 1;
