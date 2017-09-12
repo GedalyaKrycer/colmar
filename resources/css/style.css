@@ -38,6 +38,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: lato, sans-serif;
+  color: #4A4A4A;
+}
+
 .down {
   position: relative;
   top: 63px;
@@ -97,7 +102,7 @@ ul {
   text-decoration: none;
   color: white;
   font-family: Roboto, sans-serif;
-  padding: 22px 10px;
+  padding: 23px 10px;
 }
 
 .links li a:hover {
@@ -113,7 +118,7 @@ ul {
 /*Sign Up Butto*/
 nav .desktop .links li:nth-child(4n+0) {
   background-color: #009999;
-  padding: 23px 20px;
+  padding: 24px 20px;
   margin-right: 0;
 }
 
@@ -204,7 +209,6 @@ nav .desktop .links li:nth-child(4n+0):active {
 /*——————— Hero Banner ———————*/
 .hero {
   position: relative;
-  /*top: 63px;*/
   display: flex;
   width: 100%;
   height: 500px;
@@ -347,20 +351,24 @@ nav .desktop .links li:nth-child(4n+0):active {
 .main img {
   max-height: auto;
   max-width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.padding h3 {
+  font-size: 22px;
 }
 
 .main p {
   font-family: lato, san-serif;
   line-height: 26px;
   color: #4A4A4A;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .credit {
   font-size: .72rem;
   font-family: lato, san-serif;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .credit .name {
@@ -379,17 +387,19 @@ nav .desktop .links li:nth-child(4n+0):active {
   display: flex;
   width: 40%;
   flex-direction: column;
+  background-color: #F2EFEF;
 }
 
 .link {
   display: flex;
   width: 100%;
+  height: 100%;
   padding: 30px 20px;
   box-sizing: border-box;
 }
 
 .l1 {
-  border-top: 1px solid #D6D5D5;
+  border-top: 4px solid #FFB300;
   border-bottom: 1px solid #D6D5D5;
 }
 
@@ -494,7 +504,8 @@ nav .desktop .links li:nth-child(4n+0):active {
 }
 
 .container2 {
-  max-width: 1170px;
+  max-width: 960px;
+  height: auto;
   padding: 32px 32px;
   display: flex;
   margin: 0 auto;
@@ -505,4 +516,104 @@ nav .desktop .links li:nth-child(4n+0):active {
 
 .container2 .white {
   color: white;
+}
+
+.container2 h2 {
+  margin-top: 25px;
+}
+
+.module img {
+  width: 264px;
+}
+
+.grid {
+  margin: 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 264px;
+  height: 145px;
+  background: white;
+  margin-top: -4px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hover {
+  background-color: #FFB300;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 3%;
+  transition: all .25s ease-in;
+}
+
+.roll-over {
+  position: absolute;
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  right: 10px;
+  transition: all .25s ease-in;
+}
+
+.initial {
+  padding: 13px 15px;
+}
+
+.courses {
+  font-family: lato, sans-serif;
+  font-weight: 100;
+  color: black;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.initial:last-child {
+  font-size: 16px;
+  font-family: lato, sans-serif;
+  line-height: 21px;
+}
+
+.module:hover .hover {
+  width: 100%;
+  transition: all .25s ease-in;
+}
+
+.module:hover .roll-over {
+  right: 93px;
+  transition: all .35s ease-in;
+}
+
+.module:active .hover {
+  background-color: #009999;
+  transition: all .05s ease-in;
+}
+
+
+/*///////Responsive///////*/
+@media screen and (max-width: 855px) {
+  .grid {
+    justify-content: space-around;
+  }
+
+  .module:nth-child(2n+2) {
+    margin-left: 10px;
+  }
+}
+
+/*///////Responsive///////*/
+@media screen and (max-width: 620px) {
+  .grid {
+    display: none;
+  }
+
+  .stack {
+    display: block;
+  }
 }
