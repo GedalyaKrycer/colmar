@@ -7,9 +7,9 @@ body {
   position: relative;
 }
 
-div {
+/*div {
   border: red solid 1px;
-}
+}*/
 
 h1 {
   color: #FFFFFF;
@@ -31,6 +31,7 @@ h3 {
   font-family: Roboto, sans-serif;
   line-height: 21px;
   font-weight: bold;
+  color: #009999;
 }
 
 a {
@@ -502,6 +503,6 @@ nav .desktop .links li:nth-child(4n+0):active {
   align-items: center;
 }
 
-.white {
+.container2 .white {
   color: white;
 }
