@@ -98,6 +98,10 @@ ul {
 }
 
 /*Links*/
+.hide {
+  display: none;
+}
+
 .links li a {
   text-decoration: none;
   color: white;
@@ -169,6 +173,16 @@ nav .desktop .links li:nth-child(4n+0):active {
     background-color: #1F66BB;
     transition: all .03s ease-in-out;
   }
+
+  .hide {
+    display: inline;
+  }
+
+  .hide img {
+    height: 20px;
+    width: auto;
+  }
+
 }
 
 
