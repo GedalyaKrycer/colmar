@@ -31,8 +31,10 @@
           <li><a href="#">Online</a></li>
           <li><a href="#">For Companies</a></li>
           <li><a href="#">Sign In</a></li>
-          <li class="toggle"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-align-right" aria-hidden="true"></i></a></li>
         </ul>
+        <button class="toggle" onclick="myFunction()">
+          <i class="fa fa-align-right" aria-hidden="true"></i>
+        </button>
       </div>
     </nav>
     <div class="down">
@@ -57,7 +59,7 @@
             <img src="resources/images/information-main.jpg" alt="Man reading">
             <div class="padding">
               <h3>It doesn't hurt to keep practicing</h3>
-              <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed</p>
+              <p>"It is proven that extra effort, will bear fruit. Colmar Academy students are successful, because they are encouraged to iterate and improve consistently. "</p>
               <p class="credit"><span class="name">Emanuel</span> <span class="title">Sr Strategist at Hiring.com</span></p>
             </div>
           </div>
@@ -188,16 +190,116 @@
               </div>
               </a>
             </div>
+            <div class="stack">
+              <a href="#">
+                <div class="learn flex">
+                  <div class="y-icon">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                  </div>
+                  <div class="g-name">
+                    <h3>Software engineering</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="learn flex">
+                  <div class="y-icon">
+                    <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                  </div>
+                  <div class="g-name">
+                    <h3>Computer Arts</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="learn flex">
+                  <div class="y-icon">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="g-name">
+                    <h3>Design</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="learn flex">
+                  <div class="y-icon">
+                    <i class="fa fa-area-chart" aria-hidden="true"></i>
+                  </div>
+                  <div class="g-name">
+                    <h3>Data</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="learn flex">
+                  <div class="y-icon">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                  </div>
+                  <div class="g-name">
+                    <h3>Business</h3>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="learn flex">
+                  <div class="y-icon">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="g-name">
+                    <h3>Marketing</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- Section 3 -->
+        <div class="container1">
+          <div class="main">
+            <video src="resources/videos/thesis.mp4" controls></video>
+            <div class="padding">
+              <h3>Reimagine Urban</h3>
+              <p>What once was an abandon office building, is now turned into a art center. Discover how Colmar Academy students banned together and help make a difference.</p>
+            </div>
+          </div>
+          <div class="side-bar-1">
+            <a href="#"><div class="link l1">
+                <img class="square" src="resources/images/thesis-fisma.jpg" alt="Thesis">
+                <div class="text">
+                  <h3 class="title white">Fisma: Design and Prototype</h3>
+                  <p class="side-bar-body white">Designer showcase of new prototype product</p>
+                </div>
+              </div>
+            </a>
+            <a href="#"><div class="link">
+                <img class="square" src="resources/images/thesis-now-and-then.jpg" alt="Cityscape">
+                <div>
+                  <h3 class="title white">Now and then</h3>
+                  <p class="side-bar-body white">Research study about New York</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+          <p>© 2016 Colmar Academy. All rights reserved</p>
+          <div class="site-links">
+            <a href="#">Term</a>
+            <a href="#">Privacy</a>
+          </div>
+        </footer>
       </div>
     </div>
+
     <!-- Scripts -->
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "links") {
-          x.className += " responsive";
+          x.className += "toggle";
         } else {
             x.className = "links";
           }

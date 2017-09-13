@@ -6,10 +6,10 @@
     <defs>
         <polygon id="path-1" points="0 0 1501 0 1501 733 0 733"></polygon>
     </defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.337579257">
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.25">
         <g id="Desktop" transform="translate(0.000000, -1145.000000)">
-            <g id="Start-Learning" transform="translate(-242.000000, 1134.000000)">
-                <g id="Background">
+            <g id="Start-Learning" transform="translate(-242.000000, 724.000000)">
+                <g id="Background" transform="translate(0.000000, 410.000000)">
                     <g id="LIONS" transform="translate(0.000000, 11.000000)">
                         <mask id="mask-2" fill="white">
                             <use xlink:href="#path-1"></use>

@@ -67,8 +67,8 @@ nav {
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 1;
-  border-bottom: 1px solid #0B5059;
+  z-index: 9;
+  border-bottom: 1px solid #07343A;
 }
 
 .desktop {
@@ -138,69 +138,39 @@ nav .desktop .links li:nth-child(4n+0):active {
 
 /*///////Responsive///////*/
 @media screen and (max-width: 680px) {
+  .desktop img{
+    width: 200px;
+    height: auto;
+  }
+
   .desktop .links li {
     display: none;
   }
 
-  .desktop li.toggle {
+  .toggle {
     float: right;
     display: block;
   }
 
-  .desktop .links li a {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 24px;
-    padding-bottom: 22px;
+  button {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
     background-color: #009999;
+    border: none;
   }
 
-  nav .desktop .links li a:hover {
+  button:hover {
     background-color: #FFB300;
   }
 
-  nav .desktop .links li a:active {
+  button:active {
     background-color: #1F66BB;
     transition: all .03s ease-in-out;
   }
-
-  .links.responsive {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-    .links.responsive li a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-  .links.responsive li a {
-    float: none;
-     display: block;
-     text-align: left;
- }
 }
 
-/*@media screen and (max-width: 426px) {
-  .desktop img{
-    width: 150px;
-    height: auto;
-  }
-
-  nav {
-    width: 100%;
-    height:50px;
-  }
-
-  .desktop .links li a {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 18px;
-    padding-bottom: 16px;
-  }
-
-}*/
 
 
 
@@ -218,7 +188,7 @@ nav .desktop .links li:nth-child(4n+0):active {
 .study-img {
   width: 100%;
   height: auto;
-  background-image: url('./resources/images/banner-2.jpg');
+  background-image: url(../images/banner-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
@@ -235,6 +205,7 @@ nav .desktop .links li:nth-child(4n+0):active {
 }
 
 .learn-content {
+  width: 100%;
   padding: 30px 23px;
   box-sizing: border-box;
 }
@@ -272,10 +243,13 @@ nav .desktop .links li:nth-child(4n+0):active {
 }
 
 /*///////Responsive///////*/
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 625px) {
+  .main-content {
+    position: relative;
+    top: 150px;
+  }
+
   .hero {
-    /*position: relative;*/
-    /*top: 63px;*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -285,20 +259,24 @@ nav .desktop .links li:nth-child(4n+0):active {
   .study-img {
     width: 100%;
     height: 150px;
-    background-image: url('./resources/images/hero-image-mobile.png');
+    background-image: url(../images/hero-image-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
     order: 1;
   }
 
   .hero-learn {
-    height: 500px;
+    height: auto;
     width: 100%;
     background: linear-gradient(179.49deg, #009999 0%, #1F66BB 100%);
     display: flex;
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
+    position: relative;
+    top: 150px;
+    z-index: 1;
     order: 2;
   }
 
@@ -328,6 +306,8 @@ nav .desktop .links li:nth-child(4n+0):active {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  z-index: 2;
+  background-color: white;
 }
 
 
@@ -386,6 +366,7 @@ nav .desktop .links li:nth-child(4n+0):active {
 .side-bar-1 {
   display: flex;
   width: 40%;
+  height: 100%;
   flex-direction: column;
   background-color: #F2EFEF;
 }
@@ -497,8 +478,8 @@ nav .desktop .links li:nth-child(4n+0):active {
 
 /*——————— Section 2 ———————*/
 .background {
-  background: linear-gradient(179.49deg, #009999 0%, #1F66BB 100%);
-  /*background-image: url('resources/images/LIONS.svg');*/
+  background: url(../images/LIONS.svg), linear-gradient(179.49deg, #009999 0%, #1F66BB 100%);
+  /*background-image: url(../images/LIONS.svg);*/
   background-size: cover;
   width: 100%;
 }
@@ -555,7 +536,7 @@ nav .desktop .links li:nth-child(4n+0):active {
 .roll-over {
   position: absolute;
   text-align: center;
-  padding: 50px 0;
+  padding: 25px 0;
   color: white;
   right: 10px;
   transition: all .25s ease-in;
@@ -595,6 +576,10 @@ nav .desktop .links li:nth-child(4n+0):active {
   transition: all .05s ease-in;
 }
 
+.stack {
+  display: none;
+}
+
 
 /*///////Responsive///////*/
 @media screen and (max-width: 855px) {
@@ -614,6 +599,110 @@ nav .desktop .links li:nth-child(4n+0):active {
   }
 
   .stack {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .stack a {
+    margin-bottom: 20px;
+  }
+
+  .learn {
+    display: flex;
+    min-width: 280px;
+    height: 50px;
+  }
+
+  .y-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #FFB300;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .g-name {
+    min-width: 228px;
+    height: 50px;
+    background-color: white;
+    padding: 14px 15px;
+    box-sizing: border-box;
+  }
+
+  .learn:hover .g-name {
+    background-color: #009999;
+    transition: all .05s ease-in;
+  }
+
+  .learn:hover h3 {
+    color: white;
+    transition: all .05s ease-in;
+  }
+
+  .learn:active .g-name {
+    background-color: #1F66BB;
+    transition: all .25s ease-in;
+  }
+
+}
+
+
+
+
+
+/*——————— Section 3 ———————*/
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+
+
+/*——————— Footer ———————*/
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #083B42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: lato, sans-serif;
+}
+
+footer p {
+  color: #D9D9D9;
+}
+
+.site-links a {
+  color: #D9D9D9;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.site-links a:hover {
+  opacity: .5;
+}
+
+
+/*///////Responsive///////*/
+@media screen and (max-width: 420px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer p {
+    margin-bottom: 10px;
   }
 }
