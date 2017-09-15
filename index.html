@@ -26,19 +26,32 @@
     <nav>
       <div class="desktop">
         <a href="#"><img src="resources/images/White-Logo.png" alt="logo icon"></a>
+        <!-- Responsive Nav -->
+        <ul id="menu">
+          <li>
+            <input id="check01" type="checkbox" name="menu"/>
+            <label for="check01"><i class="fa fa-align-right" aria-hidden="true"></i></label>
+            <ul class="submenu">
+              <li><a href="#">
+                <span><img src="resources/images/ic-on-campus.svg" alt="Campus icon"></span>On Campus</a>
+              </li>
+              <li><a href="#">
+                <span><img src="resources/images/ic-online.svg" alt="online icon"></span>Online</a>
+              </li>
+              <li><a href="#">
+                <span><img src="resources/images/ic-on-campus.svg" alt="Campus icon"></span>For Companies</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Desktop Nav -->
         <ul class="links flex" id="myTopnav">
           <li><a href="#">
-            <span class="hide"><img src="resources/images/ic-on-campus.svg" alt="Campus icon"></span>On Campus
-          </a></li>
-          <li><a href="#">
-            <span class="hide"><img src="resources/images/ic-online.svg" alt="online icon"></span>Online
-          </a></li>
-          <li><a href="#">
-            <span class="hide"><img src="resources/images/ic-login.svg" alt="login icon"></span>For Companies
-          </a></li>
-          <li><a href="#">
-            <span class="hide"></span>Sign In
-          </a></li>
+            <span class="hide"><img src="resources/images/ic-on-campus.svg" alt="Campus icon"></span>On Campus</a>
+          </li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">For Companies</a></li>
+          <li><a href="#">Sign In</a></li>
         </ul>
         <button class="toggle" onclick="myFunction()">
           <i class="fa fa-align-right" aria-hidden="true"></i>
@@ -302,16 +315,5 @@
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "links") {
-          x.className += "toggle";
-        } else {
-            x.className = "links";
-          }
-        }
-    </script>
   </body>
 </html>
