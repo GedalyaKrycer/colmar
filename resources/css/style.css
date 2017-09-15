@@ -210,7 +210,7 @@ nav .desktop .links li:nth-child(4n+0):active {
 
   ul.submenu li a{
     display: block;
-    width: 100%;
+    width: 140px;
     padding: 12px 12px;;
     color:white;
     text-decoration:none;
@@ -239,6 +239,8 @@ nav .desktop .links li:nth-child(4n+0):active {
   .desktop .links {
     display: none;
   }
+
+  .de
 
 }
 
