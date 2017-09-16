@@ -230,7 +230,6 @@ nav .desktop .links li:nth-child(4n+0):active {
     margin-right: 5px;
   }
 
-/*dscsacsacsacascsacdsa*/
   .desktop img{
     width: 200px;
     height: auto;
@@ -239,8 +238,6 @@ nav .desktop .links li:nth-child(4n+0):active {
   .desktop .links {
     display: none;
   }
-
-  .de
 
 }
 
@@ -402,7 +399,6 @@ nav .desktop .links li:nth-child(4n+0):active {
 }
 
 .main img {
-  max-height: auto;
   max-width: 100%;
   margin-bottom: 15px;
 }
